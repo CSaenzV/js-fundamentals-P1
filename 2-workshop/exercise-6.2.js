@@ -5,6 +5,9 @@ function exercise6_2() {
   //
   // Write code between the lines (below)
   // -----------------------------------------------------------------
+  for (let number = 5; number <= 45; number++){
+    console.log(number)
+  }
   // -----------------------------------------------------------------
   // Write code between the lines (above)
   //
@@ -17,5 +20,5 @@ function exercise6_2() {
 
 // Once you are done type the following in the terminal to test your answer(s).
 // yarn test exercise-6.2
-
+exercise6_2()
 module.exports = exercise6_2;
