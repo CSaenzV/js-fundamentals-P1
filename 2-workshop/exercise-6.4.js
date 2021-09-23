@@ -6,6 +6,10 @@ function exercise6_4() {
   //
   // Write code between the lines (below)
   // -----------------------------------------------------------------
+  for (number = 36; number>=0; number--) {
+    if (number % 2==0)
+    console.log(number)
+  }
   // -----------------------------------------------------------------
   // Write code between the lines (above)
   //
@@ -18,5 +22,5 @@ function exercise6_4() {
 
 // Once you are done type the following in the terminal to test your answer(s).
 // yarn test exercise-6.4
-
+exercise6_4()
 module.exports = exercise6_4;
