@@ -20,6 +20,14 @@ function exercise13() {
   //
   // Write code between the lines (below)
   // -----------------------------------------------------------------
+  //Ref: https://www.adaweb.es/serie-de-fibonacci-en-javascript/
+  var limit = 50;
+	var fibo = [0,1];
+
+	for(i=2; i <= limit; i++){
+		fibo.push(fibo[i-1] + fibo[i-2]);
+	}
+  console.log(fibo);	
   // -----------------------------------------------------------------
   // Write code between the lines (above)
   //
@@ -32,5 +40,5 @@ function exercise13() {
 
 // Once you are done type the following in the terminal to test your answer(s).
 // yarn test exercise-13
-
+exercise13()
 module.exports = exercise13;
