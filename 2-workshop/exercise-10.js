@@ -15,7 +15,7 @@ function exercise10() {
   // -----------------------------------------------------------------
   let str = "#"
   for (let i = 1; i <= 7; i++){
-    console.log(str.repeat(i))
+    console.log(str.repeat(i)) //Ref: https://www.w3schools.com/jsref/jsref_repeat.asp
   }
 
   // -----------------------------------------------------------------
