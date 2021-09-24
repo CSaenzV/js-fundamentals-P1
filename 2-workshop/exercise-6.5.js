@@ -16,6 +16,13 @@ function exercise6_5() {
   //
   // Write code between the lines (below)
   // -----------------------------------------------------------------
+  for (let number = 1; number <= 10; number++) {
+    if (number % 2) {
+      console.log(`${number} is odd`)
+    }else {
+      console.log(`${number} is even`)
+    }
+  }
   // -----------------------------------------------------------------
   // Write code between the lines (above)
   //
@@ -28,5 +35,5 @@ function exercise6_5() {
 
 // Once you are done type the following in the terminal to test your answer(s).
 // yarn test exercise-6.5
-
+exercise6_5()
 module.exports = exercise6_5;
