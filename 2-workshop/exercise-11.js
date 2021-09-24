@@ -15,6 +15,20 @@ function exercise11() {
   //
   // Write code between the lines (below)
   // -----------------------------------------------------------------
+  // ref: https://programmerclick.com/article/74372221208/
+  for (let i = 1; i <= 8; i++) {
+    var str = "";
+    var off = i % 2;
+    for (let j = 1; j <= 8; j++) {
+      if (off) {
+        str += "#";
+      } else {
+        str += "_";
+      }
+      off = !off;
+    }
+    console.log(str);
+  }
   // -----------------------------------------------------------------
   // Write code between the lines (above)
   //
@@ -27,5 +41,5 @@ function exercise11() {
 
 // Once you are done type the following in the terminal to test your answer(s).
 // yarn test exercise-11
-
+exercise11();
 module.exports = exercise11;
