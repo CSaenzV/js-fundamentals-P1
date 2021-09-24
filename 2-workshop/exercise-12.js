@@ -15,6 +15,39 @@ function exercise12() {
   //
   // Write code between the lines (below)
   // -----------------------------------------------------------------
+// REF: https://es.stackoverflow.com/questions/98287/numeros-primos-en-javascript/327338
+  var retdata = "";
+
+  for (var j = 2; j <= 200; j++) {
+  
+    if (prime(j)) {
+
+      if (retdata.length==0){
+        retdata = j;
+      } else {
+        retdata = retdata + ', ' + j
+      }
+      
+    }
+    
+  }
+  
+  console.log(retdata);
+  
+  
+  function prime(number) {
+  
+    for (var i = 2; i < number; i++) {
+  
+      if (number % i === 0) {
+        return false;
+      }
+  
+    }
+  
+    return number !== 1;
+  }
+
   // -----------------------------------------------------------------
   // Write code between the lines (above)
   //
@@ -27,5 +60,5 @@ function exercise12() {
 
 // Once you are done type the following in the terminal to test your answer(s).
 // yarn test exercise-12
-
+exercise12()
 module.exports = exercise12;
